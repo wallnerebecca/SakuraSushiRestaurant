@@ -3,7 +3,7 @@ import SushiCard from './sushi-card';
 
 export default function SushiWrapper({ sushis }: { sushis: Sushi[] }) {
     return (
-        <div className="grid grid-col gap-4 md:grid-cols-2 xl:grid-cols-4">
+        <div className="grid grid-col gap-4 md:grid-cols-2 xl:grid-cols-4 m-2">
             {sushis.map((sushi) => (
             <SushiCard key={sushi.name} sushi={sushi} />
         ))}

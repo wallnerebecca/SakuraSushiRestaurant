@@ -11,7 +11,7 @@ export default function DrinkImage({ drink }: { drink: Drink}) {
             alt={drinkName}
             width={800}
             height={800}
-            className="w-full h-full object-cover block"
+            className="w-full h-full object-cover block items-center max-w-2xl"
         />
     )
 }
