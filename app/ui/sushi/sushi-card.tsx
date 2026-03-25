@@ -1,10 +1,10 @@
 'use client';
 
-import { Sushi } from '../lib/definitions';
+import { Sushi } from '../../lib/definitions';
 import SushiInfo from './sushi-info';
 import { useState } from 'react';
 import Image from "next/image";
-import SushiImage from "./sushi-image";
+import ItemImage from "../item-image";
 
 export default function SushiCard({ sushi }: { sushi: Sushi }) {
     const [hidden, setHidden] = useState(true);
@@ -22,11 +22,7 @@ export default function SushiCard({ sushi }: { sushi: Sushi }) {
                 onClick={showModal}
             >
                 <div className="relative">
-
-                    <SushiImage sushi={sushi} />
-
-
-
+                    <ItemImage item={sushi} />
                     {available ? (
                         <div className="absolute bottom-3 right-3 bg-pink-400 text-white text-md font-semibold px-3 py-1 rounded-full">
                             {sushi.price_usd} USD

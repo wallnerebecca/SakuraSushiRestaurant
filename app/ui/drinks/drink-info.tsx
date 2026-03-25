@@ -1,6 +1,6 @@
 import { Dispatch, SetStateAction } from 'react';
 import { Drink } from '../lib/definitions';
-import DrinkImage from './drink-image';
+import ItemImage from "@/app/ui/item-image";
 
 export default function DrinkInfo({ drink, setHidden }: { drink: Drink, setHidden: Dispatch<SetStateAction<boolean>> }) {
 
@@ -26,8 +26,7 @@ export default function DrinkInfo({ drink, setHidden }: { drink: Drink, setHidde
             <hr className="border-t border-gray-300"></hr>
             <div className="flex justify-center items-center">
                 <div className=" rounded-2xl overflow-hidden m-2 max-w-2xl">
-                    <DrinkImage drink={drink}
-                    />
+                    <ItemImage item={drink} />
                 </div>
             </div>
             <div className="grid justify-items-center max-h-15">

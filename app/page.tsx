@@ -4,6 +4,7 @@ import AddressCard from "./ui/address";
 import SushiWrapper from "./ui/sushi/sushi-wrapper";
 import DrinksWrapper from "./ui/drinks/drink-wrapper";
 import { headers } from 'next/headers';
+import Image from "next/image";
 
 export default async function Overview() {
     const headersList = await headers();
@@ -14,7 +15,16 @@ export default async function Overview() {
   return (
       <div className="h-screen grid gap-1 grid-rows-[auto_auto_1fr_auto_auto] bg-zinc-50 font-sans dark:bg-black py-8 px-4">
         <div className="row-start-1">
-          <h1 className="text-4xl font-bold text-pink-400">{restaurant.name}</h1>
+            <div className="flex items-center">
+                <Image
+                    src={restaurant.img}
+                    alt={restaurant.name}
+                    width={100}
+                    height={100}
+                    className="object-cover block"
+                />
+                <h1 className="text-4xl font-bold text-pink-400">{restaurant.name}</h1>
+            </div>
           <AddressCard address={restaurant.address} />
         </div>
 

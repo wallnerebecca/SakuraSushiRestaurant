@@ -1,4 +1,4 @@
-Learning React and Next.js
+WIP: Learning React and Next.js
 
 Small WebApp for a Sushi Restaurant
 showing Drinks and Sushi from a JSON-file

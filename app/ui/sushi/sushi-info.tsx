@@ -2,6 +2,7 @@
 import { Dispatch, SetStateAction } from 'react';
 import { Sushi } from '../lib/definitions';
 import SushiImage from './sushi-image';
+import ItemImage from "@/app/ui/item-image";
 
 export default function SushiInfo({ sushi, setHidden }: { sushi: Sushi, setHidden: Dispatch<SetStateAction<boolean>> }) {
 
@@ -26,7 +27,7 @@ export default function SushiInfo({ sushi, setHidden }: { sushi: Sushi, setHidde
             </div>
             <hr className="border-t border-gray-300"></hr>
             <div className="rounded-2xl overflow-hidden m-2">
-                <SushiImage sushi={sushi} />
+                <ItemImage item={sushi} />
             </div>
 
             <div className="grid grid-cols-3 justify-items-center">

@@ -1,7 +1,8 @@
 export type Restaurant = {
 name: string;
+img: string;
 address: Address;
-offered_sushis: Sushi[];
+offered_sushi: Sushi[];
 offered_drinks: Drink[];
 };
 
@@ -14,17 +15,19 @@ export type Address = {
     };
 };
 
+export type MenuItem = Sushi | Drink;
+
 export type Sushi = {
     name: string;
     description: string;
-    weight_grams: number;
+    pieces: number;
     price_usd: number;
     info: {
-        in_stock: boolean;
+        in_stock?: boolean;
         vegetarian: boolean;
-        allergens_contained_in: string[];
-        availableSince: number;
-        available_until: string;
+        allergens_contained_in?: string[];
+        availableSince?: number;
+        available_until?: string;
         img: string;
     };
     tags: string[];
@@ -34,6 +37,7 @@ export type Drink = {
     name: string;
     description: string;
     price: number;
-    allergens: string[];
+    allergens?: string[];
     img: string;
 };
+

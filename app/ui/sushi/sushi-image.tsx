@@ -4,7 +4,6 @@ import Image from "next/image";
 export default function SushiImage({ sushi }: { sushi: Sushi}) {
     const imageUrl = sushi.info.img;
     const sushiName = sushi.name;
-    const available = (sushi.info.in_stock === undefined || sushi.info.in_stock)
 
     return (
         <Image
@@ -12,7 +11,7 @@ export default function SushiImage({ sushi }: { sushi: Sushi}) {
             alt={sushiName}
             width={640}
             height={481}
-            className={`w-full h-full object-cover block ${available ? '' : 'grayscale'} `}
+            className={`w-full h-full object-cover block `}
         />
     )
 }
