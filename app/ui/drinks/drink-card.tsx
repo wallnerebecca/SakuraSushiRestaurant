@@ -11,6 +11,7 @@ export default function DrinkCard({ drink }: { drink: Drink }) {
     function showModal() {
         setHidden(false);
     }
+
     return (
         <>
             <div className="min-w-30 max-w-60"

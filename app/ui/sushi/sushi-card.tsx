@@ -1,9 +1,8 @@
 'use client';
 
-import { Sushi } from '../../lib/definitions';
+import { Sushi } from '../lib/definitions';
 import SushiInfo from './sushi-info';
 import { useState } from 'react';
-import Image from "next/image";
 import ItemImage from "../item-image";
 
 export default function SushiCard({ sushi }: { sushi: Sushi }) {

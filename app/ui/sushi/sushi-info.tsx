@@ -1,7 +1,6 @@
 //"use client";
 import { Dispatch, SetStateAction } from 'react';
 import { Sushi } from '../lib/definitions';
-import SushiImage from './sushi-image';
 import ItemImage from "@/app/ui/item-image";
 
 export default function SushiInfo({ sushi, setHidden }: { sushi: Sushi, setHidden: Dispatch<SetStateAction<boolean>> }) {
