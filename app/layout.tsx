@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Sakura from "./ui/sakura";
 
 export const metadata: Metadata = {
   title: "Sakura Sushi",
@@ -16,7 +17,10 @@ export default function RootLayout({
       lang="en"
       className="h-full antialiased"
     >
-      <body className="min-h-full">{children}</body>
+    <body className="min-h-full">
+      <Sakura />
+      {children}
+    </body>
     </html>
   );
 }
