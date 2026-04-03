@@ -17,10 +17,10 @@ export default function RootLayout({
       lang="en"
       className="h-full antialiased"
     >
-    <body className="min-h-full">
-      <Sakura />
-      {children}
-    </body>
+      <body className="min-h-full">
+        <Sakura />
+        {children}
+      </body>
     </html>
   );
 }

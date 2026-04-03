@@ -3,7 +3,7 @@ import { Dispatch, SetStateAction } from 'react';
 import { Sushi } from '../lib/definitions';
 import ItemImage from "@/app/ui/item-image";
 
-export default function SushiInfo({ sushi, setHidden }: { sushi: Sushi, setHidden: Dispatch<SetStateAction<boolean>> }) {
+export default function SushiInfo({ sushi, setHidden }: { sushi: Sushi, setHidden: Dispatch<SetStateAction<boolean>>; }) {
 
     function hideModal() {
         setHidden(true);
@@ -17,8 +17,8 @@ export default function SushiInfo({ sushi, setHidden }: { sushi: Sushi, setHidde
             <div className="grid grid-cols-[1fr_auto_1fr] pt-2 bg-gray-100">
                 <div className="flex justify-start pl-1 text-pink-400 font-semibold text-lg">
                     <button onClick={hideModal}>
-                    <span className="inline-block w-3 h-3 border-t-2 border-l-2 border-pink-400 rotate-315 -translate-y-[1px]"></span>
-                    More Sakura!
+                        <span className="inline-block w-3 h-3 border-t-2 border-l-2 border-pink-400 rotate-315 -translate-y-[1px]"></span>
+                        More Sakura!
                     </button>
                 </div>
                 <h2 className="flex justify-center text-lg font-semibold">{sushi.name}</h2>
@@ -50,12 +50,12 @@ export default function SushiInfo({ sushi, setHidden }: { sushi: Sushi, setHidde
                     {sushi.description}
                 </div>
                 {sushi.tags && sushi.tags > 0 ? (
-                <div className="flex flex-col">
-                    <span className="text-sm font-bold text-gray-300">Special ingredients</span>
-                    <span className="font-semibold">
-                        {sushi.tags?.map(tag => tag.charAt(0).toUpperCase() + tag.slice(1)).join(', ') || ''}
-                    </span>
-                </div>):""}
+                    <div className="flex flex-col">
+                        <span className="text-sm font-bold text-gray-300">Special ingredients</span>
+                        <span className="font-semibold">
+                            {sushi.tags?.map(tag => tag.charAt(0).toUpperCase() + tag.slice(1)).join(', ') || ''}
+                        </span>
+                    </div>) : ""}
 
                 <div className="flex flex-col">
                     <span className="text-sm font-bold text-gray-300">Allergens</span>
@@ -63,7 +63,7 @@ export default function SushiInfo({ sushi, setHidden }: { sushi: Sushi, setHidde
                         {sushi.info.allergens_contained_in && sushi.info.allergens_contained_in.length > 0
                             ? sushi.info.allergens_contained_in.join(', ')
                             : "Ask our Staff for Allergens."}
-                        </span>
+                    </span>
                 </div>
 
                 {/* Leider habe ich hier beim newDate() einen Fehler bekommen.
@@ -83,15 +83,15 @@ export default function SushiInfo({ sushi, setHidden }: { sushi: Sushi, setHidde
                     <div className="flex flex-col">
                         <span className="text-sm font-bold text-gray-300">Available Since</span>
                         <span className="font-semibold">{availableSince.toLocaleDateString()}</span>
-                    </div>):""}
+                    </div>) : ""}
                 {sushi.info.available_until ? (
                     <div className="flex flex-col">
                         <span className="text-sm font-bold text-gray-300">Available Until</span>
                         <span className="font-semibold">{availableUntil.toLocaleDateString()}</span>
-                    </div>):""}
+                    </div>) : ""}
             </div>
 
 
         </div>
-    )
+    );
 }

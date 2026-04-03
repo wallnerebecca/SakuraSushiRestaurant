@@ -18,11 +18,16 @@
       "info": {
         "in_stock": true,
         "vegetarian": false,
-        "allergens_contained_in": ["fish"],
+        "allergens_contained_in": [
+          "fish"
+        ],
         "availableSince": 1605394800000,
         "img": "/img/sushi/Salmon_Nigiri.jpg"
       },
-      "tags": ["salmon", "rice"]
+      "tags": [
+        "salmon",
+        "rice"
+      ]
     },
     {
       "name": "Avocado Maki",
@@ -37,7 +42,10 @@
         "available_until": "2035-11-25T00:00:00Z",
         "img": "/img/sushi/Avocado_Maki.jpg"
       },
-      "tags": ["avocado", "vegan"]
+      "tags": [
+        "avocado",
+        "vegan"
+      ]
     },
     {
       "name": "Tuna Roll",
@@ -47,10 +55,14 @@
       "info": {
         "in_stock": false,
         "vegetarian": false,
-        "allergens_contained_in": ["fish"],
+        "allergens_contained_in": [
+          "fish"
+        ],
         "img": "/img/sushi/Tuna_Rolls.jpg"
       },
-      "tags": ["tuna"]
+      "tags": [
+        "tuna"
+      ]
     },
     {
       "name": "Tempura Shrimp Roll",
@@ -59,10 +71,16 @@
       "price": 11.99,
       "info": {
         "vegetarian": false,
-        "allergens_contained_in": ["shellfish", "gluten"],
+        "allergens_contained_in": [
+          "shellfish",
+          "gluten"
+        ],
         "img": "/img/sushi/Tempura_Shrimp_Roll.jpg"
       },
-      "tags": ["shrimp", "crispy"]
+      "tags": [
+        "shrimp",
+        "crispy"
+      ]
     },
     {
       "name": "Spicy Salmon Roll",
@@ -72,11 +90,17 @@
       "info": {
         "in_stock": true,
         "vegetarian": false,
-        "allergens_contained_in": ["fish", "egg"],
+        "allergens_contained_in": [
+          "fish",
+          "egg"
+        ],
         "availableSince": 1606823381947,
         "img": "/img/sushi/Salmon_Rolls.jpg"
       },
-      "tags": ["spicy", "salmon"]
+      "tags": [
+        "spicy",
+        "salmon"
+      ]
     },
     {
       "name": "Cucumber Roll",
@@ -89,7 +113,10 @@
         "allergens_contained_in": [],
         "img": "/img/sushi/Cucumber_Rolls.jpg"
       },
-      "tags": ["vegan", "cucumber"]
+      "tags": [
+        "vegan",
+        "cucumber"
+      ]
     }
   ],
   "offered_drinks": [
@@ -97,7 +124,9 @@
       "name": "Sake",
       "description": "Traditional Japanese rice wine",
       "price": 7.99,
-      "allergens": ["rice"],
+      "allergens": [
+        "rice"
+      ],
       "img": "/img/drinks/Sake.jpg"
     },
     {
@@ -110,7 +139,9 @@
       "name": "Matcha Latte",
       "description": "Creamy matcha green tea latte",
       "price": 4.99,
-      "allergens": ["milk"],
+      "allergens": [
+        "milk"
+      ],
       "img": "/img/drinks/Matcha_Latte.jpg"
     },
     {

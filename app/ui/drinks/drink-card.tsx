@@ -5,7 +5,7 @@ import Image from "next/image";
 import DrinkInfo from "./drink-info";
 import ItemImage from "@/app/ui/item-image";
 
-export default function DrinkCard({ drink }: { drink: Drink }) {
+export default function DrinkCard({ drink }: { drink: Drink; }) {
     const [hidden, setHidden] = useState(true);
 
     function showModal() {
@@ -26,8 +26,8 @@ export default function DrinkCard({ drink }: { drink: Drink }) {
                 </div>
             </div>
             <div className={hidden ? "hidden" : "block"}>
-                <DrinkInfo setHidden={setHidden} drink={drink}/>
+                <DrinkInfo setHidden={setHidden} drink={drink} />
             </div>
         </>
-    )
+    );
 }

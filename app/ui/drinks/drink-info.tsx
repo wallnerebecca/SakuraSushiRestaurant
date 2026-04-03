@@ -2,7 +2,7 @@ import { Dispatch, SetStateAction } from 'react';
 import { Drink } from '../lib/definitions';
 import ItemImage from "@/app/ui/item-image";
 
-export default function DrinkInfo({ drink, setHidden }: { drink: Drink, setHidden: Dispatch<SetStateAction<boolean>> }) {
+export default function DrinkInfo({ drink, setHidden }: { drink: Drink, setHidden: Dispatch<SetStateAction<boolean>>; }) {
 
     function hideModal() {
         setHidden(true);
@@ -48,10 +48,10 @@ export default function DrinkInfo({ drink, setHidden }: { drink: Drink, setHidde
                             {drink.allergens_contained_in && drink.allergens_contained_in.length > 0
                                 ? drink.allergens_contained_in.join(', ')
                                 : "Ask our Staff for Allergens."}
-                            </span>
+                        </span>
                     </div>
                 </div>
             </div>
         </div>
-    )
+    );
 }

@@ -1,18 +1,18 @@
-'use client'
+'use client';
 
-import { Sushi } from '../../lib/definitions'
-import SushiInfo from './sushi-info'
-import { useState } from 'react'
-import ItemImage from "../item-image"
+import { Sushi } from '../../lib/definitions';
+import SushiInfo from './sushi-info';
+import { useState } from 'react';
+import ItemImage from "../item-image";
 
-export default function SushiCard({ sushi }: { sushi: Sushi }) {
-    const [hidden, setHidden] = useState(true)
+export default function SushiCard({ sushi }: { sushi: Sushi; }) {
+    const [hidden, setHidden] = useState(true);
 
     function showModal() {
-        setHidden(false)
+        setHidden(false);
     }
 
-    const available = (sushi.info.in_stock === undefined || sushi.info.in_stock)
+    const available = (sushi.info.in_stock === undefined || sushi.info.in_stock);
 
     return (
         <>
@@ -44,5 +44,5 @@ export default function SushiCard({ sushi }: { sushi: Sushi }) {
                 <SushiInfo setHidden={setHidden} sushi={sushi} />
             </div>
         </>
-    )
+    );
 }
