@@ -1,9 +1,9 @@
 export type Restaurant = {
-name: string;
-img: string;
-address: Address;
-offered_sushi: Sushi[];
-offered_drinks: Drink[];
+    name: string;
+    img: string;
+    address: Address;
+    offered_sushi: Sushi[];
+    offered_drinks: Drink[];
 };
 
 export type Address = {
