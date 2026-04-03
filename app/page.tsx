@@ -27,6 +27,9 @@ export default async function Overview() {
             </div>
           <AddressCard address={restaurant.address} />
         </div>
+          <div className="h-5 w-5 bg-gradient-to-b from-transparent via-black/50 to-black">
+
+          </div>
 
         <div className="row-start-2">
           <h2 className="text-2xl font-bold">Sushi</h2>

@@ -14,7 +14,7 @@
       "name": "Salmon Nigiri",
       "description": "Fresh salmon over seasoned rice",
       "pieces": 6,
-      "price_usd": 8.99,
+      "price": 8.99,
       "info": {
         "in_stock": true,
         "vegetarian": false,
@@ -28,7 +28,7 @@
       "name": "Avocado Maki",
       "description": "Simple and fresh avocado roll",
       "pieces": 6,
-      "price_usd": 6.49,
+      "price": 6.49,
       "info": {
         "in_stock": true,
         "vegetarian": true,
@@ -43,7 +43,7 @@
       "name": "Tuna Roll",
       "description": "Classic tuna sushi roll",
       "pieces": 6,
-      "price_usd": 9.49,
+      "price": 9.49,
       "info": {
         "in_stock": false,
         "vegetarian": false,
@@ -56,7 +56,7 @@
       "name": "Tempura Shrimp Roll",
       "description": "Crispy shrimp tempura with sauce",
       "pieces": 6,
-      "price_usd": 11.99,
+      "price": 11.99,
       "info": {
         "vegetarian": false,
         "allergens_contained_in": ["shellfish", "gluten"],
@@ -68,7 +68,7 @@
       "name": "Spicy Salmon Roll",
       "description": "Salmon with spicy mayo",
       "pieces": 6,
-      "price_usd": 10.49,
+      "price": 10.49,
       "info": {
         "in_stock": true,
         "vegetarian": false,
@@ -82,7 +82,7 @@
       "name": "Cucumber Roll",
       "description": "Light and refreshing cucumber sushi",
       "pieces": 6,
-      "price_usd": 5.49,
+      "price": 5.49,
       "info": {
         "in_stock": true,
         "vegetarian": true,

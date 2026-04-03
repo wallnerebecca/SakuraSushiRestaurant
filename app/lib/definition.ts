@@ -21,7 +21,7 @@ export type Sushi = {
     name: string;
     description: string;
     pieces: number;
-    price_usd: number;
+    price: number;
     info: {
         in_stock?: boolean;
         vegetarian: boolean;

@@ -35,7 +35,7 @@ export default function SushiInfo({ sushi, setHidden }: { sushi: Sushi, setHidde
                     <span className="text-sm font-bold text-gray-300">Pieces</span>
                 </div>
                 <div className="flex flex-col items-center">
-                    <span className="text-xl font-bold">{sushi.price_usd} USD</span>
+                    <span className="text-xl font-bold">{sushi.price} €</span>
                     <span className="text-sm font-bold text-gray-300">Price</span>
                 </div>
                 <div className="flex flex-col items-center">

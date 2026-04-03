@@ -1,15 +1,15 @@
-'use client';
+'use client'
 
-import { Sushi } from '../lib/definitions';
-import SushiInfo from './sushi-info';
-import { useState } from 'react';
-import ItemImage from "../item-image";
+import { Sushi } from '../../lib/definitions'
+import SushiInfo from './sushi-info'
+import { useState } from 'react'
+import ItemImage from "../item-image"
 
 export default function SushiCard({ sushi }: { sushi: Sushi }) {
-    const [hidden, setHidden] = useState(true);
+    const [hidden, setHidden] = useState(true)
 
     function showModal() {
-        setHidden(false);
+        setHidden(false)
     }
 
     const available = (sushi.info.in_stock === undefined || sushi.info.in_stock)
@@ -24,16 +24,16 @@ export default function SushiCard({ sushi }: { sushi: Sushi }) {
                     <ItemImage item={sushi} />
                     {available ? (
                         <div className="absolute bottom-3 right-3 bg-pink-400 text-white text-md font-semibold px-3 py-1 rounded-full">
-                            {sushi.price_usd} USD
+                            {sushi.price} €
                         </div>
-                    ):
-                    (
-                        <div className="absolute inset-0 flex items-center justify-center">
-                            <div className="bg-white/80 px-4 py-2 rounded-full text-sm font-medium">
-                                Currently not available
+                    ) :
+                        (
+                            <div className="absolute inset-0 flex items-center justify-center">
+                                <div className="bg-white/80 px-4 py-2 rounded-full text-sm font-medium">
+                                    Currently not available
+                                </div>
                             </div>
-                        </div>
-                    )}
+                        )}
                 </div>
                 <div className={`flex justify-between font-semibold items-center p-4 ${available ? '' : 'line-through'}`}>
                     <h3 className="text-xl ">{sushi.name}</h3>
@@ -41,8 +41,8 @@ export default function SushiCard({ sushi }: { sushi: Sushi }) {
                 </div>
             </div>
             <div className={hidden ? "hidden" : "block"}>
-                <SushiInfo setHidden={setHidden} sushi={sushi}/>
+                <SushiInfo setHidden={setHidden} sushi={sushi} />
             </div>
-            </>
+        </>
     )
 }

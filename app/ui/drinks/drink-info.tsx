@@ -31,7 +31,7 @@ export default function DrinkInfo({ drink, setHidden }: { drink: Drink, setHidde
             </div>
             <div className="grid justify-items-center max-h-15">
                 <div className="flex flex-col items-center">
-                    <span className="text-xl font-bold">{drink.price} USD</span>
+                    <span className="text-xl font-bold">{drink.price} €</span>
                     <span className="text-sm font-bold text-gray-300">Price</span>
                 </div>
             </div>
