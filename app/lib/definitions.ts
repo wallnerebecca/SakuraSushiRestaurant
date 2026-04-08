@@ -25,7 +25,7 @@ export type Sushi = {
     info: {
         in_stock?: boolean;
         vegetarian: boolean;
-        allergens_contained_in?: string[];
+        allergens?: string[];
         availableSince?: number;
         available_until?: string;
         img: string;

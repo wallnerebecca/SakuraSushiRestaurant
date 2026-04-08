@@ -13,7 +13,7 @@ function createPetal() {
     petal.style.height = `${size}px`;
     petal.style.animationDuration = `${duration}s`;
     petal.style.left = `${Math.random() * 150}vw`;
-    petal.style.opacity = Math.random() * 0.5 + 0.5;
+    petal.style.opacity = `${Math.random() * 0.5 + 0.5}`;
     petal.style.filter = `blur(${Math.random() * 1}px)`;
 
     document.body.appendChild(petal);

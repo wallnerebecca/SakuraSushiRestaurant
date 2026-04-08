@@ -9,8 +9,6 @@ export default function SushiInfo({ sushi, setHidden }: { sushi: Sushi, setHidde
         setHidden(true);
     }
 
-    const availableSince = new Date(sushi.info.availableSince);
-    const availableUntil = new Date(sushi.info.available_until);
 
     return (
         <div className="z-1 absolute top-0 p-0 left-0 h-screen w-screen bg-white">
@@ -49,7 +47,7 @@ export default function SushiInfo({ sushi, setHidden }: { sushi: Sushi, setHidde
                 <div className="font-semibold">
                     {sushi.description}
                 </div>
-                {sushi.tags && sushi.tags > 0 ? (
+                {sushi.tags && sushi.tags.length > 0 ? (
                     <div className="flex flex-col">
                         <span className="text-sm font-bold text-gray-300">Special ingredients</span>
                         <span className="font-semibold">
@@ -60,8 +58,8 @@ export default function SushiInfo({ sushi, setHidden }: { sushi: Sushi, setHidde
                 <div className="flex flex-col">
                     <span className="text-sm font-bold text-gray-300">Allergens</span>
                     <span className="bg-pink-200 rounded-md px-4 py-2 mx-2 font-semibold">
-                        {sushi.info.allergens_contained_in && sushi.info.allergens_contained_in.length > 0
-                            ? sushi.info.allergens_contained_in.join(', ')
+                        {sushi.info.allergens && sushi.info.allergens.length > 0
+                            ? sushi.info.allergens.join(', ')
                             : "Ask our Staff for Allergens."}
                     </span>
                 </div>
@@ -82,12 +80,12 @@ export default function SushiInfo({ sushi, setHidden }: { sushi: Sushi, setHidde
                 {sushi.info.availableSince ? (
                     <div className="flex flex-col">
                         <span className="text-sm font-bold text-gray-300">Available Since</span>
-                        <span className="font-semibold">{availableSince.toLocaleDateString()}</span>
+                        <span className="font-semibold">{new Date(sushi.info.availableSince).toLocaleDateString()}</span>
                     </div>) : ""}
                 {sushi.info.available_until ? (
                     <div className="flex flex-col">
                         <span className="text-sm font-bold text-gray-300">Available Until</span>
-                        <span className="font-semibold">{availableUntil.toLocaleDateString()}</span>
+                        <span className="font-semibold">{new Date(sushi.info.available_until).toLocaleDateString()}</span>
                     </div>) : ""}
             </div>
 

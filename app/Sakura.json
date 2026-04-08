@@ -18,7 +18,7 @@
       "info": {
         "in_stock": true,
         "vegetarian": false,
-        "allergens_contained_in": [
+        "allergens": [
           "fish"
         ],
         "availableSince": 1605394800000,
@@ -37,7 +37,7 @@
       "info": {
         "in_stock": true,
         "vegetarian": true,
-        "allergens_contained_in": [],
+        "allergens": [],
         "availableSince": 1605394800000,
         "available_until": "2035-11-25T00:00:00Z",
         "img": "/img/sushi/Avocado_Maki.jpg"
@@ -55,7 +55,7 @@
       "info": {
         "in_stock": false,
         "vegetarian": false,
-        "allergens_contained_in": [
+        "allergens": [
           "fish"
         ],
         "img": "/img/sushi/Tuna_Rolls.jpg"
@@ -71,7 +71,7 @@
       "price": 11.99,
       "info": {
         "vegetarian": false,
-        "allergens_contained_in": [
+        "allergens": [
           "shellfish",
           "gluten"
         ],
@@ -90,7 +90,7 @@
       "info": {
         "in_stock": true,
         "vegetarian": false,
-        "allergens_contained_in": [
+        "allergens": [
           "fish",
           "egg"
         ],
@@ -110,7 +110,7 @@
       "info": {
         "in_stock": true,
         "vegetarian": true,
-        "allergens_contained_in": [],
+        "allergens": [],
         "img": "/img/sushi/Cucumber_Rolls.jpg"
       },
       "tags": [

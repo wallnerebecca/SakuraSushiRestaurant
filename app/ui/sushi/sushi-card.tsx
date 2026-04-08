@@ -37,7 +37,7 @@ export default function SushiCard({ sushi }: { sushi: Sushi; }) {
                 </div>
                 <div className={`flex justify-between font-semibold items-center p-4 ${available ? '' : 'line-through'}`}>
                     <h3 className="text-xl ">{sushi.name}</h3>
-                    <span className="text-sm text-gray-500">{sushi.weight_grams}</span>
+                    <span className="text-sm text-gray-500">{sushi.pieces}</span>
                 </div>
             </div>
             <div className={hidden ? "hidden" : "block"}>

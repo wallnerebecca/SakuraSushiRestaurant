@@ -45,8 +45,8 @@ export default function DrinkInfo({ drink, setHidden }: { drink: Drink, setHidde
                     <div className="flex flex-col">
                         <span className="text-sm font-bold text-gray-300">Allergens</span>
                         <span className="bg-orange-200 rounded-md px-4 py-2 mx-2 font-semibold">
-                            {drink.allergens_contained_in && drink.allergens_contained_in.length > 0
-                                ? drink.allergens_contained_in.join(', ')
+                            {drink.allergens && drink.allergens.length > 0
+                                ? drink.allergens.join(', ')
                                 : "Ask our Staff for Allergens."}
                         </span>
                     </div>

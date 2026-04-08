@@ -1,7 +1,6 @@
 'use client';
 import { useState } from 'react';
 import { Drink } from "@/app/lib/definitions";
-import Image from "next/image";
 import DrinkInfo from "./drink-info";
 import ItemImage from "@/app/ui/item-image";
 
