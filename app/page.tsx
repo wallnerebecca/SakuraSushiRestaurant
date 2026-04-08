@@ -13,7 +13,7 @@ export default async function Overview() {
 
 
   return (
-    <div className="h-screen grid gap-1 grid-rows-[auto_auto_1fr_auto_auto] bg-zinc-50 font-sans dark:bg-black py-8 px-4">
+    <div className="h-screen grid gap-1 grid-rows-[auto_auto_1fr_auto_auto] bg-zinc-50 font-sans py-8 px-4">
       <div className="row-start-1">
         <div className="flex items-center">
           <Image

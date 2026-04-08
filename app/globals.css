@@ -10,13 +10,6 @@
   --color-foreground: var(--foreground);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
@@ -29,9 +22,11 @@ body {
     transform: translate(0, -10vh) rotate(0deg);
     opacity: 0;
   }
+
   10% {
     opacity: 1;
   }
+
   100% {
     transform: translate(-100vw, 100vh) rotate(360deg) translateX(-50px);
     opacity: 0;
@@ -44,7 +39,8 @@ body {
   right: 0;
   width: 12px;
   height: 12px;
-  background: #f9a8d4; /* Tailwind pink-300 */
+  background: #f9a8d4;
+  /* Tailwind pink-300 */
   border-radius: 50% 70% 50% 70%;
   pointer-events: none;
   z-index: 9999;
