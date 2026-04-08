@@ -1,4 +1,4 @@
-import { Sushi } from '../lib/definitions';
+import { Sushi } from "@/app/lib/definitions";
 import SushiCard from './sushi-card';
 
 export default function SushiWrapper({ sushis }: { sushis: Sushi[]; }) {

@@ -1,4 +1,4 @@
-import { Drink } from '../lib/definitions';
+import { Drink } from "@/app/lib/definitions";
 import DrinkCard from './drink-card';
 
 export default function DrinksWrapper({ drinks }: { drinks: Drink[]; }) {

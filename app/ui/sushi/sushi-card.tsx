@@ -1,6 +1,6 @@
 'use client';
 
-import { Sushi } from '../../lib/definitions';
+import { Sushi } from "@/app/lib/definitions";
 import SushiInfo from './sushi-info';
 import { useState } from 'react';
 import ItemImage from "../item-image";

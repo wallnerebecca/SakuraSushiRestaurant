@@ -1,5 +1,5 @@
 import { Dispatch, SetStateAction } from 'react';
-import { Drink } from '../lib/definitions';
+import { Drink } from "@/app/lib/definitions";
 import ItemImage from "@/app/ui/item-image";
 
 export default function DrinkInfo({ drink, setHidden }: { drink: Drink, setHidden: Dispatch<SetStateAction<boolean>>; }) {
